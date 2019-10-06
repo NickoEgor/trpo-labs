@@ -1,0 +1,44 @@
+\documentclass[a4paper, 14pt]{extarticle}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+% for xelatex
+\usepackage{fontspec}
+\setmainfont{Cantarell Light}
+
+\usepackage{indentfirst}
+\usepackage{geometry}
+\usepackage{titling}       % thetitle
+\usepackage{scrextend}     % addmargin
+
+\usepackage{graphicx}      % pictures
+\usepackage{float}         % H option for pictures
+
+\usepackage{enumitem}      % space between items
+\setlist{nosep}
+
+\geometry{
+	left=2.5cm, right=2cm,
+	top=2cm, bottom=2cm,
+}
+
+\title{Система обработки данных оператора сотовой связи}
+
+\def\year{2019}
+
+\begin{document}
+\sloppy
+\pagenumbering{gobble}
+
+\input{sections/title.tex}
+
+\pagenumbering{arabic}
+\setcounter{page}{2}
+\tableofcontents
+\newpage
+
+\input{sections/description.tex}
+\input{sections/functional.tex}
+\input{sections/nonfunctional.tex}
+
+\end{document}
